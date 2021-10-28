@@ -1,12 +1,3 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-# %%
-from IPython import get_ipython
-
-# %%
-get_ipython().system('pip install line-bot-sdk ')
-
-
 # %%
 import json
 from linebot import LineBotApi
@@ -19,7 +10,7 @@ info = json.load(file)
 
 
 # %%
-info['CHANNEL_ACCESS_TOKEN']
+
 
 
 # %%
