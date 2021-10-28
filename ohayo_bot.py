@@ -36,8 +36,8 @@ def main():
     messages = TextSendMessage(text="おはよ〜　\n 朝だよ！起きてね♡")
     line_bot_api.push_message(USER_ID,messages=messages)
     
-    
-main()
+if __name__ == "__main__":    
+    main()
 
 
 # %%
