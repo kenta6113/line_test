@@ -9,6 +9,8 @@ get_ipython().system('pip install line-bot-sdk ')
 
 # %%
 import json
+from linebot import LineBotApi
+from linebot.models import TextSendMessage
 
 
 # %%
@@ -21,8 +23,6 @@ info['CHANNEL_ACCESS_TOKEN']
 
 
 # %%
-from linebot import LineBotApi
-from linebot.models import TextSendMessage
 
 
 # %%
@@ -36,8 +36,8 @@ def main():
     messages = TextSendMessage(text="おはよ〜　\n 朝だよ！起きてね♡")
     line_bot_api.push_message(USER_ID,messages=messages)
     
-    
-main()
+if __name__ == '__main__':   
+    main()
 
 
 # %%
