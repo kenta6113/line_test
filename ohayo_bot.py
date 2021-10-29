@@ -5,7 +5,7 @@ from linebot.models import TextSendMessage
 
 
 # %%
-file = open('info.json','r')
+file = open('/Users/nakagawakenta/Desktop/git.test/line_test/info.json','r')
 info = json.load(file)
 
 
